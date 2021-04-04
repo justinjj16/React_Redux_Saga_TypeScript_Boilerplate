@@ -1,0 +1,58 @@
+.sidebar-profile {
+    border-top: 0.5px solid;
+    border-color: RGBA(255, 255, 255, 0.25);
+}
+.menu-card {
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    border-radius: 9px;
+    background: #ffffff;
+    margin: 0px;
+    margin-top: 20px;
+    &:nth-child(-n + 2){
+        margin-top: 0px;
+    }
+    width: 47%;
+    h1 {
+        color: #676e8b;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;  
+    }
+    svg {
+        fill:#676E8B;
+    }
+    &:hover {
+        background: #107ec3;
+        border: 1px solid #107ec3;
+        box-sizing: border-box;
+        color: #fff;
+        h1 {
+            color: #FFFFFF;
+        }
+        svg {
+            fill: #FFFFFF;
+        }
+    }
+}
+.activeClass {
+    background: #107ec3;
+        border: 1px solid #107ec3;
+        box-sizing: border-box;
+        color: #fff;
+        h1 {
+            color: #FFFFFF;
+        }
+        svg {
+            fill: #FFFFFF;
+        }
+}
+.menu-items {
+    overflow: auto;
+    max-height: 20rem;
+    transition: color .3s ease;
+    color: rgba(0, 0, 0, 0.3);
+    &:hover {
+        color: rgba(0, 0, 0, 0.3);
+    }
+}

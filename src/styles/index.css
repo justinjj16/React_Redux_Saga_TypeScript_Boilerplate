@@ -1,0 +1,108 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  background-color: #f4f4fa;
+  font-size: 15px;
+}
+.slider {
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+.profile-card {
+  border-radius: 21px;
+}
+.profile-card img {
+  filter: drop-shadow(0px -1px 5px rgba(0, 0, 0, 0.25));
+}
+
+.chat-box {
+  background: RGBA(16, 126, 195, 0.08);
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+  width: 26px;
+  border-radius: 13px;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0 10px;
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+  width: 26px;
+  border-radius: 13px;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0 10px;
+}
+
+main:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+main {
+  overflow: auto;
+  color: rgba(0, 0, 0, 0);
+  transition: color 0.3s ease;
+}
+*,
+*:focus {
+  outline: none;
+}
+
+.form-item {
+  position: relative;
+}
+.form-item input {
+  display: block;
+  height: 40px;
+  background: transparent;
+  transition: all 0.3s ease;
+  padding: 0 15px;
+  border-radius: 0px;
+}
+.form-item input:focus {
+  border-color: blue;
+}
+.form-item label {
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: 13px;
+  left: 10px;
+  background: #fff;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  line-height: 12px;
+  letter-spacing: 0.2px;
+}
+.form-item input:focus + label,
+.form-item input:valid + label {
+  font-size: 11px;
+  top: -5px;
+}
+.form-item input:focus + label {
+  color: blue;
+}
+.pinInput {
+  border: 1px solid #CCD4DE;
+  box-sizing: border-box;
+  border-radius: 2px;
+  max-width: 75px;
+  min-height: 40px;
+}
